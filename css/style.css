@@ -91,7 +91,7 @@ header {
 .sidebar_left_top img {
 	position: absolute;
 	top: 50px;
-	left: 90px;
+	margin: 0 auto;
 	height: 290px;
 	width: 290px;
 
@@ -365,7 +365,7 @@ svg {
 }
 .Calendar {
 }
-
+ 
 footer {
 	display: flex;
 	background-color: black;
@@ -389,6 +389,11 @@ footer img {
 .footerbox-1 > p {
 	font-size: 14px;
 	text-align: center;
+	line-height: 20px;
+}
+.footerbox-1 a:hover {
+	text-decoration: none;
+	color: #80e3ff;
 }
 
 .footerbox-2 {
@@ -396,9 +401,14 @@ footer img {
 	flex-basis: 33%;
 	text-align: center;
 }
-.footerbox-2 > p {
+.footerbox-2 p {
+	line-height: 20px;
 	font-size: 14px;
 	text-align: center;
+}
+.footerbox-2 a:hover {
+	text-decoration: none;
+	color: #80e3ff;
 }
 
 .footerbox-3 {
