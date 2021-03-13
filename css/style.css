@@ -14,9 +14,6 @@ body {
 	font-family: "Montserrat", sans-serif;
 }
 
-.container {
-	width: 100%;
-}
 header {
 	position: fixed;
 	z-index: 10000;
@@ -170,7 +167,7 @@ svg {
 }
 .sidebar_left_center {
 	padding-top: 10px;
-	min-height: 70%;
+	min-height: 10%;
 	width: 100%;
 	background-color: #000000;
 }
@@ -328,15 +325,20 @@ svg {
 	border-radius: 10px;
 	border: 1px solid rgba(255, 255, 255, 0.18);
 	display: flex;
-	justify-content: center;
 	align-items: center;
+
 	margin-bottom: 30px;
+
+	flex-direction: column;
+}
+.content > div > h2 {
+	font-size: 26px;
+	margin: 15px 0px 0 0;
 }
 
 .content_box {
+	padding: 60px 0;
 	width: 80%;
-	text-align: center;
-	flex-direction: column;
 	font-size: 18px;
 	transform: scale(1);
 	transition: 0.5s;
