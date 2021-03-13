@@ -85,7 +85,6 @@ header {
 
 /*---------------circle---------------*/
 .sidebar_top_wrapper {
-	overflow: hidden;
 	min-height: 390px;
 }
 .sidebar_left_top img {
@@ -331,23 +330,11 @@ svg {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	overflow: hidden;
 	margin-bottom: 30px;
 }
 
-.Portfilio .content_box a {
-	display: block;
-	padding: 20px;
-
-	background-color: gold;
-	text-align: center;
-}
-
 .content_box {
-	display: flex;
 	width: 80%;
-	justify-content: center;
-	align-items: center;
 	text-align: center;
 	flex-direction: column;
 	font-size: 18px;
@@ -363,11 +350,21 @@ svg {
 	transform: scale(1.1);
 	z-index: 10;
 }
+
 .Education {
 }
 .Experience {
 }
-.Portfilio {
+.Portfolio {
+	display: block;
+}
+.Portfolio .content_box a {
+	display: inline-block;
+	border-radius: 15%;
+	padding: 10px 20px;
+	color: white;
+	background-color: gold;
+	text-align: center;
 }
 .Calendar {
 }
@@ -421,6 +418,8 @@ footer img {
 	flex-basis: 33%;
 	text-align: center;
 	align-self: center;
+}
+.footerbox-3 img {
 }
 
 .footerbox-3 > a {
