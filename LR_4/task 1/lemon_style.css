@@ -1,0 +1,33 @@
+#lemon {
+    font-family: "Lobster", sans-serif;
+}
+#lemon .myblock {
+    width: 400px;
+    height: 200px;
+    border: 3px solid gold;
+    border-radius: 4px;
+    margin: 30px;
+    padding: 15px;
+    border-radius: 20px;
+}
+#lemon .lemon {
+    width: 180px;
+    height: 180px;
+    margin: 10;
+    background: url(https://cdn4.iconfinder.com/data/icons/Limon_iContainer/512/Grapefruit.png);
+    background-size: contain;
+    background-position: 50%;
+    border-radius: 5xp;
+    float: left;
+}
+
+#lemon .about-lemon h3 {
+    text-align: center;
+    padding: 0;
+}
+#lemon .about-lemon p {
+    text-align: center;
+    font-size: 12xp;
+    line-height: 120%;
+    margin: 20px 0;
+}

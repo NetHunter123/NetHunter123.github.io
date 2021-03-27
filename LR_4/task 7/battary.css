@@ -1,0 +1,55 @@
+#battary {
+	display: flex;
+	flex-direction: column;
+}
+#battary .one {
+	box-shadow: 0px 0px 40px 10px #ee161f;
+}
+#battary .two {
+	box-shadow: 0px 0px 40px 10px #ffc703;
+}
+#battary .three {
+	box-shadow: 0px 0px 40px 10px #00a154;
+}
+#battary .one,
+#battary .two,
+#battary .three {
+	width: 200px;
+	height: 80px;
+	border: 3px solid aqua;
+	position: relative;
+	margin: 20px;
+}
+#battary .one::before,
+#battary .two::before,
+#battary .three::before {
+	overflow: hidden;
+	content: "";
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	position: absolute;
+}
+#battary .one::before {
+	background: #ee161f;
+	width: 33%;
+}
+#battary .two::before {
+	background: #ffc703;
+	width: 66%;
+}
+#battary .three::before {
+	background: #00a154;
+	width: 100%;
+}
+#battary .one::after,
+#battary .two::after,
+#battary .three::after {
+	content: "";
+	background: aqua;
+	height: 50%;
+	width: 16px;
+	position: absolute;
+	top: 25%;
+	left: 100%;
+}

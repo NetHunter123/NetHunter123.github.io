@@ -1,0 +1,41 @@
+#poker li {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.5em;
+	list-style-type: none;
+	padding: 10px;
+	color: #fff;
+}
+
+#poker .first::before,
+.second::before,
+.third::before,
+.four::before {
+	margin: 15px;
+	font-size: 2rem;
+}
+
+#poker .first::before {
+	content: "\2660";
+}
+
+#poker .second::before {
+	content: "\2663";
+}
+
+#poker .first::before,
+.second::before {
+	color: aqua;
+}
+
+#poker .third::before {
+	content: "\2666";
+}
+
+#poker .four::before {
+	content: "\2665";
+}
+
+#poker .third::before,
+.four::before {
+	color: red;
+}

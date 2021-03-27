@@ -1,0 +1,18 @@
+#task6 h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: "Lobster", sans-serif;
+	font-size: 2rem;
+	text-transform: uppercase;
+	padding: 10px;
+}
+
+#task6 h1::before,
+h1::after {
+	content: "";
+	min-width: 30vw;
+	height: 3px;
+	background: aqua;
+	margin: 0 10px;
+}

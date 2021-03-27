@@ -1,0 +1,12 @@
+#links > div {
+	background: #f6967d;
+}
+#links a {
+	color: #fffdeb;
+	display: inline-block;
+	border-right: 1px solid gold;
+	padding: 5px 10px;
+}
+#links a:last-child {
+	border-right: none;
+}
