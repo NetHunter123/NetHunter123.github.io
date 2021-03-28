@@ -139,8 +139,9 @@ nav ul li:hover {
 	z-index: 5;
 }
 .container section {
-	margin: 2vh;
+	margin: 3vh;
 	border: 1px solid rgba(0, 255, 255, 0.7);
+	box-shadow: 0px 0px 20px 5px rgb(0, 255, 255);
 	min-height: 96vh;
 	border-radius: 10px;
 	overflow: hidden;
