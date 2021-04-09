@@ -1,0 +1,147 @@
+#world {
+	position: relative;
+	background-color: #7fcdc6;
+}
+#world .title {
+	margin: 0;
+	background-color: #7fcdc6;
+}
+
+#world img {
+	position: absolute;
+}
+
+#world img:nth-child(1) {
+	right: 0;
+	bottom: 50%;
+	z-index: 1;
+	width: 80%;
+	animation: cloud 15s ease-in-out infinite;
+}
+
+@keyframes cloud {
+	0% {
+		transform: translate(0px, 70px);
+	}
+
+	25% {
+		transform: translate(200px, 0px);
+	}
+
+	75% {
+		transform: translate(-200px, 0px);
+	}
+
+	100% {
+		transform: translate(0px, 70px);
+	}
+}
+
+#world img:nth-child(2) {
+	width: 100%;
+	bottom: -1%;
+	z-index: 3;
+	animation: waves 6s ease-in-out infinite;
+}
+
+@keyframes waves {
+	0% {
+		transform: translateY(0%);
+	}
+
+	50% {
+		transform: translateY(15%);
+	}
+
+	100% {
+		transform: translateY(0%);
+	}
+}
+
+#world img:nth-child(3) {
+	left: 6%;
+	bottom: 5vw;
+	width: 20%;
+	z-index: 2;
+	animation: ship 30s ease-in-out infinite;
+}
+
+@keyframes ship {
+	0% {
+		transform: translate(0%);
+	}
+	50% {
+		transform: translate(90%);
+	}
+
+	100% {
+		transform: translate(0%);
+	}
+}
+
+#world img:nth-child(4) {
+	bottom: 0%;
+	width: 90%;
+	z-index: 1;
+}
+
+@media (max-width: 1020px) {
+	#world img:nth-child(3) {
+		bottom: 4vw;
+		animation: ship_m 30s ease-in-out infinite;
+	}
+
+	@keyframes ship_m {
+		0% {
+			transform: translate(0%);
+		}
+
+		15% {
+			transform: translate(40%);
+		}
+
+		30% {
+			transform: translate(45%);
+		}
+
+		35% {
+			transform: translate(48%);
+		}
+
+		40% {
+			transform: translate(50%);
+		}
+
+		45% {
+			transform: translate(60%);
+		}
+
+		50% {
+			transform: translate(63%);
+		}
+
+		55% {
+			transform: translate(65%);
+		}
+
+		65% {
+			transform: translate(80%);
+		}
+
+		70% {
+			transform: translate(83%);
+		}
+
+		75% {
+			transform: translate(88%);
+		}
+
+		95% {
+			transform: translate(-5%);
+		}
+
+		100% {
+			transform: translate(0%);
+		}
+	}
+}
