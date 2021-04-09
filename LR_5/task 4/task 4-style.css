@@ -1,145 +1,130 @@
 #calculator {
+	font-size: 20px;
+	padding: 50px 0;
 	justify-content: space-around;
 }
+#calculator * {
+}
 
-.main-block-position {
-	display: inline-block;
-	position: relative;
-	width: 375px;
-	height: 573px;
-}
-.headblock-position {
-	position: absolute;
-	left: 0px;
-	top: 18px;
+#calculator .main_box {
+	min-height: 50px;
+	border-radius: 20px;
+	border: 4px solid aqua;
 	width: 378px;
+}
+#calculator .calc_name {
+	width: 380px;
 	height: 50px;
+	background: aqua;
 }
-#calculator p {
-	margin: 10px 10px 0 0;
-	color: #ebf4fa;
-	font-size: 20px;
+#calculator .calc_name p {
+	font-family: "Lobster", sans-serif;
 	text-align: right;
+	margin-right: 10px;
+	line-height: 45px;
+	color: black;
+	font-size: 1em;
 }
-.main-block-position input {
-	position: absolute;
-	top: 75px;
-	left: 10px;
-}
-.greenblock-position {
-	position: absolute;
-	top: 130px;
-	right: 13px;
-}
-.main-block-position .section {
-	position: absolute;
-	width: 64px;
-	height: 64px;
-}
-.section:hover {
-	cursor: pointer;
-}
-#calculator span {
-	position: relative;
-	top: 26%;
-	font-size: 25px;
-}
-.main-block-float {
-	float: left;
-	margin-right: 20px;
-	width: 375px;
-	height: 573px;
-}
-.headblock-float {
-	padding-top: 1px;
-	margin-top: 18px;
-	width: 378px;
-	height: 49px;
-	background: #569092;
-}
-#calculator .numbers-float {
-	margin-top: 100px;
-	margin-left: 5px;
-	width: 375px;
-	height: 356px;
-}
-.greenblock-float {
-	float: right;
-	margin: 8px 16px 20px 0;
-}
-.main-block-float input {
-	float: left;
+
+#calculator input {
+	display: block;
+	margin: 0 auto;
 	margin-top: 7px;
-	margin-left: 10px;
-}
-.section:active,
-.headblock-position {
-	background: #569092;
-}
-.main-block-float .section {
-	clear: right;
-	float: left;
-	width: 64px;
-	height: 64px;
-}
-.greenblock-position,
-.greenblock-float {
-	width: 100px;
-	height: 45px;
-	background: #5f9c9d;
-}
-.main-block-position input,
-.main-block-float input {
 	width: 349px;
 	height: 42px;
-	border: 3px solid #569092;
+	border: 3px solid aqua;
 	border-radius: 10px;
 }
-.main-block-float .section:nth-child(n) {
-	margin: 0 7px 15px 10px;
+
+#calculator .solar_element {
+	width: 100px;
+	height: 45px;
+	background: aqua;
+	margin-top: 8px;
 }
-.main-block-position,
-.section,
-.main-block-float {
-	border: 4px solid #569092;
+#calculator .numbers {
+	min-height: 356px;
+}
+#calculator .btn {
+	width: 64px;
+	height: 64px;
+	border: 4px solid aqua;
 	border-radius: 15px;
 }
-#calculator .section:nth-child(n) {
+#calculator .btn p {
+	font-size: 1.25em;
+	line-height: 64px;
 	text-align: center;
 }
-#calculator .section:nth-child(4n + 1) {
-	left: 18px;
+/*---------------------------------position_start---------------------------------*/
+#calculator .position {
+	position: relative;
+	height: 555px;
 }
-#calculator .section:nth-child(4n + 2) {
-	left: 100px;
+#calculator .position .calc_name {
+	position: relative;
+	left: -1px;
+	margin-top: 25px;
 }
-#calculator .section:nth-child(4n + 3) {
-	left: 186px;
+#calculator .position .solar_element {
+	position: relative;
+	right: -71%;
 }
-#calculator .section:nth-child(4n + 4) {
-	left: 276px;
+#calculator .position .numbers {
+	position: relative;
 }
-#calculator .section:nth-child(1),
-.section:nth-child(2),
-.section:nth-child(3),
-.section:nth-child(4) {
-	top: 193px;
+#calculator .position .btn {
+	position: absolute;
 }
-#calculator .section:nth-child(5),
-.section:nth-child(6),
-.section:nth-child(7),
-.section:nth-child(8) {
-	top: 283px;
+#calculator .position .btn:nth-child(4n + 1) {
+	left: 6%;
 }
-#calculator .section:nth-child(9),
-.section:nth-child(10),
-.section:nth-child(11),
-.section:nth-child(12) {
-	top: 370px;
+#calculator .position .btn:nth-child(4n + 2) {
+	left: 29%;
 }
-#calculator .section:nth-child(13),
-.section:nth-child(14),
-.section:nth-child(15),
-.section:nth-child(16) {
-	top: 457px;
+#calculator .position .btn:nth-child(4n + 3) {
+	right: 29%;
 }
+#calculator .position .btn:nth-child(4n) {
+	right: 6%;
+}
+#calculator .position .btn:nth-child(-n + 4) {
+	top: 4%;
+}
+#calculator .position .btn:nth-child(n + 5):nth-child(-n + 8) {
+	top: 28%;
+}
+#calculator .position .btn:nth-child(n + 9):nth-child(-n + 12) {
+	top: 52%;
+}
+#calculator .position .btn:nth-child(n + 13):nth-child(-n + 16) {
+	top: 76%;
+}
+/*---------------------------------position_end---------------------------------*/
+
+/*---------------------------------float_start---------------------------------*/
+#calculator .float .calc_name {
+	margin-top: 25px;
+}
+#calculator .float .solar_element {
+	float: right;
+	margin-right: 10px;
+	margin-bottom: 14px;
+	clear: both;
+}
+
+#calculator .float .numbers {
+	clear: right;
+	margin: 0 auto;
+	width: 344px;
+}
+#calculator .float .btn {
+	float: left;
+	margin: 0 7px 16px 7px;
+}
+
+#calculator .float .btn:nth-child(n + 13):nth-child(-n + 16) {
+	margin: 0 7px 0px 7px;
+}
+
+/*---------------------------------float_end---------------------------------*/
