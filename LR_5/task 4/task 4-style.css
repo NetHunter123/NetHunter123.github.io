@@ -11,6 +11,11 @@
 	border-radius: 20px;
 	border: 4px solid aqua;
 	width: 378px;
+	box-shadow: 0px 0px 31px 9px rgba(0, 255, 244, 0.5);
+}
+#calculator .main_box:hover {
+	border: 4px solid orange;
+	box-shadow: 0px 0px 31px 9px orange;
 }
 #calculator .calc_name {
 	width: 380px;
@@ -34,6 +39,8 @@
 	height: 42px;
 	border: 3px solid aqua;
 	border-radius: 10px;
+	font-size: 1em;
+	text-align: right;
 }
 
 #calculator .solar_element {
@@ -50,17 +57,37 @@
 	height: 64px;
 	border: 4px solid aqua;
 	border-radius: 15px;
+	box-shadow: 0px 0px 31px 9px rgba(0, 255, 244, 0.3);
+	cursor: pointer;
 }
 #calculator .btn p {
 	font-size: 1.25em;
 	line-height: 64px;
 	text-align: center;
 }
+
+#calculator .btn p::selection {
+	background: transparent;
+}
+.btn:hover {
+	background: orange;
+	color: black;
+	border: 4px solid orange !important;
+	box-shadow: 0px 0px 20px 9px orange !important;
+}
+.btn:active {
+	background: lime;
+	color: black;
+	border: 4px solid lime !important;
+	box-shadow: 0px 0px 20px 9px rgb(0, 255, 0) !important;
+}
+
 /*---------------------------------position_start---------------------------------*/
 #calculator .position {
 	position: relative;
 	height: 555px;
 }
+
 #calculator .position .calc_name {
 	position: relative;
 	left: -1px;
@@ -100,9 +127,14 @@
 #calculator .position .btn:nth-child(n + 13):nth-child(-n + 16) {
 	top: 76%;
 }
+
 /*---------------------------------position_end---------------------------------*/
 
 /*---------------------------------float_start---------------------------------*/
+#calculator .float {
+	z-index: 100;
+}
+
 #calculator .float .calc_name {
 	margin-top: 25px;
 }
