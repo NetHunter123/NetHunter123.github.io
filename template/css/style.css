@@ -9,6 +9,7 @@ body {
 	background: #000;
 }
 .background {
+	z-index: -50;
 	display: flex;
 	justify-content: center;
 	align-items: center;
