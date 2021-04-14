@@ -364,9 +364,16 @@ svg {
 	display: inline-block;
 	border-radius: 10px;
 	padding: 10px 20px;
+	margin-bottom: 15px;
 	color: black;
 	background-color: gold;
 	text-align: center;
+	box-shadow: 0 0px 10px 5px gold;
+}
+
+.Portfolio .content_box a:hover {
+	background-color: aqua;
+	box-shadow: 0 0px 10px 5px aqua;
 }
 .Calendar {
 }

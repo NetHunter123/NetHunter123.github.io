@@ -4,6 +4,7 @@
 	justify-content: space-around;
 }
 #calculator * {
+	transition: 0.25s;
 }
 
 #calculator .main_box {
