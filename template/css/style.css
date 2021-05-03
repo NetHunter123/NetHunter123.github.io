@@ -1,154 +1,180 @@
 html {
-	box-sizing: border-box;
-	color: aqua;
-	font-family: "Montserrat", sans-serif;
+	box-sizing     : border-box;
+	color          : aqua;
+	font-family    : "Montserrat", sans-serif;
 	scroll-behavior: smooth;
 }
+
 body {
-	padding: 0 2px;
+	padding   : 0 2px;
 	background: #000;
 }
+
 .background {
-	z-index: -50;
-	display: flex;
+	z-index        : -50;
+	display        : flex;
 	justify-content: center;
-	align-items: center;
-	position: fixed;
-	width: 100%;
+	align-items    : center;
+	position       : fixed;
+	width          : 100%;
 }
+
 .glowing {
-	position: relative;
-	min-width: 750px;
-	height: 750px;
-	margin: -150px;
+	position        : relative;
+	min-width       : 750px;
+	height          : 750px;
+	margin          : -150px;
 	transform-origin: right;
-	animation: ColorChange 5s linear infinite;
+	animation       : ColorChange 5s linear infinite;
 }
+
 @keyframes ColorChange {
 	0% {
-		filter: hue-rotate(0deg);
+		filter   : hue-rotate(0deg);
 		transform: rotate(0deg);
 	}
+
 	100% {
-		filter: hue-rotate(360deg);
+		filter   : hue-rotate(360deg);
 		transform: rotate(360deg);
 	}
 }
+
 .glowing:nth-child(even) {
 	transform-origin: left;
 }
+
 .glowing span {
 	position: absolute;
-	top: calc(80px * var(--i));
-	left: calc(80px * var(--i));
-	bottom: calc(80px * var(--i));
-	right: calc(80px * var(--i));
+	top     : calc(80px * var(--i));
+	left    : calc(80px * var(--i));
+	bottom  : calc(80px * var(--i));
+	right   : calc(80px * var(--i));
 }
+
 .glowing span::before {
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: -8px;
-	width: 15px;
-	height: 15px;
+	content      : "";
+	position     : absolute;
+	top          : 50%;
+	left         : -8px;
+	width        : 15px;
+	height       : 15px;
 	border-radius: 50%;
 }
+
 .glowing span:nth-child(3n + 1):before {
 	background: radial-gradient(rgba(134, 255, 0, 1), rgb(208, 255, 0));
 	box-shadow: 0 0 20px rgba(134, 255, 0, 1), 0 0 40px rgba(134, 255, 0, 1), 0 0 60px rgba(134, 255, 0, 1),
 		0 0 80px rgba(134, 255, 0, 1), 0 0 0 8px rgba(134, 255, 0, 0.1);
 }
+
 .glowing span:nth-child(3n + 2):before {
 	background: rgba(255, 214, 0, 1);
 	box-shadow: 0 0 20px rgba(255, 214, 0, 1), 0 0 40px rgba(255, 214, 0, 1), 0 0 60px rgba(255, 214, 0, 1),
 		0 0 80px rgba(255, 214, 0, 1), 0 0 0 8px rgba(255, 214, 0, 0.1);
 }
+
 .glowing span:nth-child(3n + 3):before {
 	background: rgba(0, 226, 255, 1);
 	box-shadow: 0 0 20px rgba(0, 226, 255, 1), 0 0 40px rgba(0, 226, 255, 1), 0 0 60px rgba(0, 226, 255, 1),
 		0 0 80px rgba(0, 226, 255, 1), 0 0 0 8px rgba(0, 226, 255, 0.1);
 }
+
 .glowing span:nth-child(3n + 1) {
 	animation: bg 10s alternate infinite;
 }
+
 .glowing span:nth-child(3n + 2) {
 	animation: bg-revers 3s alternate infinite;
 }
+
 .glowing span:nth-child(3n + 3) {
 	animation: bg 8s alternate infinite;
 }
+
 @keyframes bg {
 	0% {
 		transform: rotate(0deg);
 	}
+
 	100% {
 		transform: rotate(360deg);
 	}
 }
+
 @keyframes bg-revers {
 	0% {
 		transform: rotate(360deg);
 	}
+
 	100% {
 		transform: rotate(0deg);
 	}
 }
+
 .container {
-	z-index: 30;
+	z-index   : 30;
 	min-height: 93vh;
 }
-nav {
+
+.container>nav {
 	text-align: center;
-	z-index: 4000;
-	position: fixed;
-	left: 0;
-	right: 0;
-	bottom: 0;
+	z-index   : 4000;
+	position  : fixed;
+	left      : 0;
+	right     : 0;
+	bottom    : 0;
 }
 
-nav ul {
-	display: flex;
+.container>nav ul {
+	display        : flex;
 	justify-content: center;
 }
-nav a {
-	display: block;
+
+.container>nav a {
+	display  : block;
 	font-size: 20px;
-	color: aqua;
-	padding: 8px 15px;
-}
-nav ul li {
-	background: #161616;
-	list-style: none;
-	width: 50px;
-	height: 40px;
-	line-height: 24px;
-	transition: 0.35s;
-	left: 0px;
+	color    : aqua;
+	padding  : 8px 15px;
 }
 
-nav ul li:first-child {
+.container>nav ul li {
+	background : #161616;
+	list-style : none;
+	width      : 50px;
+	height     : 40px;
+	line-height: 24px;
+	transition : 0.35s;
+	left       : 0px;
+}
+
+.container>nav ul li:first-child {
 	border-radius: 15px 0px 0px 15px;
 }
-nav ul li:last-child {
+
+.container>nav ul li:last-child {
 	border-radius: 0px 15px 15px 0px;
 }
-nav ul li:hover {
-	width: 70px;
+
+.container>nav ul li:hover {
+	width     : 70px;
 	background: #ff9900;
 	box-shadow: 0px 0px 20px 5px #ff9900;
-	z-index: 5;
+	z-index   : 5;
 }
-.container > section {
-	margin: 3vh;
-	border: 1px solid rgba(0, 255, 255, 0.7);
-	box-shadow: 0px 0px 20px 5px rgb(0, 255, 255);
-	min-height: 93vh;
-	border-radius: 10px;
-	overflow: hidden;
-	display: flex;
+
+.container>section {
+	margin         : 3vh;
+	border         : 1px solid rgba(0, 255, 255, 0.7);
+	box-shadow     : 0px 0px 20px 5px rgb(0, 255, 255);
+	min-height     : 93vh;
+	border-radius  : 10px;
+	overflow       : hidden;
+	display        : flex;
 	justify-content: center;
-	align-items: center;
+	align-items    : center;
 }
+
 #begin {
 	font-size: 2rem;
 }

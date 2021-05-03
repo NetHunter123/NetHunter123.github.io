@@ -1,9 +1,6 @@
 #main {
-    display       : block;
-    padding-top   : 70px;
-    padding-bottom: 90px;
-    padding-left  : 90px;
-    padding-right : 90px;
+    display: block;
+    padding: 90px 90px 90px 90px;
 }
 
 ul,
