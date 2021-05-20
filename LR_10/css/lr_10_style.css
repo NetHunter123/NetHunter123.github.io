@@ -1,0 +1,18 @@
+.grid_wrap {
+    display              : grid;
+    grid-template-columns: repeat(26, 16px);
+    grid-template-rows   : repeat(26, 16px);
+    grid-column-gap      : 0px;
+    grid-row-gap         : 0px;
+
+
+
+    /* .div1 { grid-area: 221 / 24 / 243 / 26; } */
+}
+
+.item {
+    /* height             : 16px;
+    width              : 16px; */
+    /* grid-area       : 221 / 24 / 243 / 26; */
+    background-color: black;
+}

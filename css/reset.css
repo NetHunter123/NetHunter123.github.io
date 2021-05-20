@@ -67,11 +67,11 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
+    margin        : 0;
+    padding       : 0;
+    border        : 0;
+    outline       : 0;
+    font-size     : 100%;
     vertical-align: baseline;
 }
 
@@ -115,27 +115,27 @@ q:after {
 }
 
 a {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
+    margin         : 0;
+    padding        : 0;
+    font-size      : 100%;
+    vertical-align : baseline;
+    background     : transparent;
     text-decoration: none;
 }
 
 /* change colours to suit your needs */
 ins {
     background-color: #ff9;
-    color: #000;
-    text-decoration: none;
+    color           : #000;
+    text-decoration : none;
 }
 
 /* change colours to suit your needs */
 mark {
     background-color: #ff9;
-    color: #000;
-    font-style: italic;
-    font-weight: bold;
+    color           : #000;
+    font-style      : italic;
+    font-weight     : bold;
 }
 
 del {
@@ -145,22 +145,22 @@ del {
 abbr[title],
 dfn[title] {
     border-bottom: 1px dotted;
-    cursor: help;
+    cursor       : help;
 }
 
 table {
     border-collapse: collapse;
-    border-spacing: 0;
+    border-spacing : 0;
 }
 
 /* change border colour to suit your needs */
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
+    display   : block;
+    height    : 1px;
+    border    : 0;
     border-top: 1px solid #cccccc;
-    margin: 1em 0;
-    padding: 0;
+    margin    : 1em 0;
+    padding   : 0;
 }
 
 input,
@@ -172,24 +172,32 @@ select {
 input {
     outline: none;
 }
+
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
-    margin: 0;
+    margin            : 0;
 }
+
 /*Это для браузера Firefox:*/
 
 input[type="number"] {
     -moz-appearance: textfield;
 }
+
 input[type="number"]:hover,
 input[type="number"]:focus {
     -moz-appearance: number-input;
 }
+
 /*Для других*/
 
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
-    margin: 0;
+    margin            : 0;
+}
+
+a {
+    outline: none;
 }
