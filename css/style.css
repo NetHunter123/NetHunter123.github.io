@@ -126,7 +126,7 @@ header {
 	content      : "";
 	height       : 300px;
 	width        : 300px;
-	border       : 20px solid #7bd1e9d3;
+	border       : 20px solid rgb(204, 255, 251);
 	border-radius: 50%;
 	box-shadow   : 0 0 50px #0f0, inset 0 0 50px #0f0;
 	animation    : animate 5s linear infinite;
